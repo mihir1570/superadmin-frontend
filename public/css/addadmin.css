@@ -1,0 +1,42 @@
+body {
+  background-color: #f0f2f5;
+}
+
+.addadmin {
+  max-width: 70%;
+  margin: auto;
+  padding: 20px;
+  background-color: #f0f2f5;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 50px;
+}
+
+.addadmin h4 {
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 95%;
+    margin-top: 20px; /* Adjust margin-top for smaller screens */
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+/* Add this CSS to your existing styles */
+
+select.form-select {
+  height: 3.07rem /* Adjust the height as needed */
+}

@@ -1,0 +1,343 @@
+/*Super Admin Login */
+body {
+  background-color: #f5f5f5;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 150px;
+}
+
+.login-logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-title {
+  color: #1A73E8;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.login-subtitle {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: #1A73E8;
+  border: none;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  background-color: #1B66C9;
+}
+
+.btn-primary:focus {
+  box-shadow: none;
+}
+
+.btn-primary:active {
+  background-color: #1A73E8 !important;
+  box-shadow: none !important;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.input-container {
+  position: relative;
+}
+
+input {
+  height: 48px;
+  width: 280px;
+  border: 1px solid #c0c0c0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+.label {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  pointer-events: none;
+}
+
+input,
+.label .text {
+  width: 100%;
+  font-family: 'Segoe UI';
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  border: 1.5px solid #1A73E8;
+}
+
+input:focus+.label .text {
+  font-size: 12px;
+  transform: translate(0, -50%);
+  background-color: white;
+  padding-left: 4px;
+  padding-right: 4px;
+  color: #1A73E8;
+}
+
+.label .text {
+  transition: all 0.15s ease-out;
+}
+
+input:focus+.label .text,
+:not(input[value=""])+.label .text {
+  font-size: 12px;
+  transform: translate(0, -120%);
+  background-color: white;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+input:focus+.label .text {
+  color: #1A73E8;
+}
+
+.showErrors {
+  height: 30px;
+  width: 100%;
+  padding-left: 3px;
+  font-size: small;
+}
+
+.logout-mode .logout {
+  cursor: pointer;
+}
+
+/* Light Dark mode all over admin panel */
+
+.main-title h1 {
+  color: var(--text-color);
+}
+
+body.dark .main-title h1 {
+  color: var(--black-light-color);
+}
+
+.dashboard {
+  background-color: var(--panel-color);
+}
+
+.addadmin {
+  max-width: 70%;
+  margin: auto;
+  padding: 20px;
+  background-color: var(--addadminform-color);
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 80px;
+}
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .addadmin {
+    max-width: 95%;
+  }
+}
+
+ /* Media Query for low resolution  Tablets, Ipads */
+ @media (min-width: 481px) and (max-width: 767px) {
+  .addadmin {
+    max-width: 90%;
+  }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+  .addadmin {
+    max-width: 90%;
+  }
+}
+
+.addadmin h4 {
+  padding-bottom: 20px;
+  color: var(--text-color);
+}
+
+.addadmin label.form-label {
+  color: var(--text-color);
+}
+
+.addadmin input.form-control,
+.addadmin select.form-select,
+.addadmin textarea.form-control {
+  background-color: var(--panel-color);
+  color: var(--text-color);
+  border-color: var(--border-color);
+  border-width: 1px;
+}
+
+select.form-select {
+  height: 3rem;
+}
+
+.addadmin input#inputAddress::placeholder {
+  color: var(--black-light-color);
+}
+
+.addadmin button[type="submit"] {
+  height: 3rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+}
+
+/* Light mode */
+.upload-label {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Dark mode */
+.dark-mode .upload-label {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+
+
+
+/* Apply styles to the file input */
+.addadmin input[type="file"] {
+  background-color: var(--panel-color);
+  color: var(--text-color);
+  border-color: var(--border-color);
+  border-width: 1px;
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.75rem;
+  height: calc(2.25rem + 2px);
+}
+
+.input-group-text {
+  background-color: var(--panel-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+}
+
+.input-group-text i {
+  font-size: 1.2rem;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-group-prepend,
+.input-group-append {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.input-group-prepend {
+  left: 0;
+}
+
+.input-group-append {
+  right: 0;
+}
+
+
+
+/* CSS for Password Changed Successfully */
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.changed-password-card {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.6s;
+}
+
+.changed-password-card:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  transform: scale(1.1);
+  
+}
+
+.changed-password-container {
+  padding: 20px;
+}
+
+.changed-password-card h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.changed-password-card p {
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.page-container .changed-password-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.changed-password-card .btn:hover {
+  background-color: #419145;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
